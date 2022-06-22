@@ -3,9 +3,11 @@
 #
 import sys
 
-for row in sys.stdin:
-    campo = row.split(',')
-    prop = campo[3]
-    mont = campo[4]
+if __name__ == '__main__':
 
-    sys.stdout.write(f'{mont}\t{prop}\n')
+    for row in sys.stdin:
+        campo = row.split(',')
+        prop = campo[3]
+        mont = campo[4]
+
+        sys.stdout.write(f'{mont}\t{prop}\n')
