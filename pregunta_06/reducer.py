@@ -3,7 +3,7 @@
 #
 import sys
 from curses import keyname
-from __future__ import division
+
 
 if __name__ == '__main__':
 
