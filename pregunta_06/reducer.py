@@ -1,8 +1,10 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
-import sys
+from __future__ import division
 from curses import keyname
+import sys
+
 
 
 if __name__ == '__main__':
