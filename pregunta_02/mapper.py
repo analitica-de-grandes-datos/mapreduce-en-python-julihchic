@@ -10,4 +10,4 @@ if __name__ == '__main__':
         prop = campo[3]
         mont = campo[4]
 
-        sys.stdout.write(f'{mont}\t{prop}\n')
+        sys.stdout.write(f'{prop}\t{mont}\n')
