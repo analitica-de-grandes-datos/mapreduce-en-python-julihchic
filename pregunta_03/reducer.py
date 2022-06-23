@@ -7,6 +7,7 @@ import sys
 if __name__ == '__main__':
 
     dict = {}
+    
 
     for line in sys.stdin:
 
@@ -14,19 +15,8 @@ if __name__ == '__main__':
         val = int(val)
         dict[key] = val
 
+    sortedDict = sorted(dict.items(), key = operator.itemgetter(1))
+    for line in sortedDict:
+              
 
-        if key == curkey:
-            if val > max:
-                total = val
-            else:
-                val = max 
-                total = val
-        else:
-            if curkey is not None:
-                sys.stdout.write('{}\t{}\n'.format(curkey, total))
-
-            curkey = key
-            total = val
-            max = val
-
-    sys.stdout.write("{}\t{}\n".format(curkey, total))
+        sys.stdout.write('{},{}\n'.format(line[0], line[1]))
