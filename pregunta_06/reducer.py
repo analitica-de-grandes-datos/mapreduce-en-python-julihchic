@@ -2,10 +2,12 @@
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
 import sys
+from curses import keyname
+from __future__ import division
 
 if __name__ == '__main__':
 
-    Keyname = None
+    keyname = None
     max = 0
     min = 0
 
@@ -15,7 +17,7 @@ if __name__ == '__main__':
         val = float(val)
 
 
-        if key == Keyname:
+        if key == keyname:
             if val > max:
                 max = val
             else:
@@ -27,11 +29,11 @@ if __name__ == '__main__':
                 val = min 
                                  
         else:
-            if Keyname is not None:
-                sys.stdout.write('{}\t{}\t{}\n'.format(Keyname, max, min))
+            if keyname is not None:
+                sys.stdout.write('{}\t{}\t{}\n'.format(keyname, max, min))
 
-                Keyname = key
+                keyname = key
                 max = val
                 min = val
 
-    sys.stdout.write("{}\t{}\t{}\n".format(Keyname, max, min))
+    sys.stdout.write("{}\t{}\t{}\n".format(keyname, max, min))
