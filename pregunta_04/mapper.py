@@ -6,6 +6,7 @@ import sys
 if __name__ == '__main__':
 
     for row in sys.stdin:
-        data= row.split('\t')
+        data= row.strip().split('\t')
+        c1=data[0]
 
-        sys.stdout.write(f'{row}\n')
+        sys.stdout.write(f'{c1}\n')
