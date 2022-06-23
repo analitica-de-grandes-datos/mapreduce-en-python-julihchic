@@ -20,4 +20,4 @@ if __name__ == '__main__':
     for line in sortedDict:
               
 
-        sys.stdout.write('{} {} {}\n'.format(line[0], line[1], line[2]))
+        sys.stdout.write('{}  {}  {}\n'.format(line[0], line[1], line[2]))
