@@ -7,7 +7,7 @@ if __name__ == '__main__':
 
     for row in sys.stdin:
         campo = row.split(',')
-        prop = campo[3]
-        mont = campo[4]
+        c2 = campo[3]
+        c3 = campo[4]
 
-        sys.stdout.write(f'{prop}\t{mont}\n')
+        sys.stdout.write(f"{c2}\t{c3}\n")
